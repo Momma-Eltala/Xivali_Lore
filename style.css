@@ -6,10 +6,6 @@ html {
     height: 100%;
 }
 
-body {
-    background-image: linear-gradient(#007a9a, #03957f);
-}
-
 header {
     text-align: center;
     width: 90%;
