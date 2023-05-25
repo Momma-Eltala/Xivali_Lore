@@ -2,8 +2,11 @@
 /* CSS Document */
 
 html {
-    background-image: linear-gradient(#007a9a, #03957f);
-    height: 100%;
+    background-image: linear-gradient(#03957f, #007a9a, #03957f);
+}
+
+body {
+    margin-top: 40px;
 }
 
 header {
@@ -82,4 +85,5 @@ article {
     border-radius: 50px;
     padding-top: 40px;
     background-image: linear-gradient(#007a9a, #03957f);
+    margin-bottom: 40px;
 }
