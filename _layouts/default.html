@@ -1,0 +1,55 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+
+<head>
+    <title>{{ page.title }} - Xivali</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/text.css" />
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" style="text-decoration: unset;">
+            <div style="display: flex; gap: 16px; align-items: center;">
+                <image class="logo" src="assets/logo.svg" />
+                <h1 class="title">Xivali</h1>
+            </div>
+        </a>
+        <h1 class="headline">{{ page.title }}</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="biology.html">
+                <image class="nav-item" src="assets/kun's_ref.png" />
+            </a>
+            <a href="technology.html">
+                <image class="nav-item" src="assets/WIP.png" />
+            </a>
+            <a href="hs-137.html">
+                <image class="nav-item" src="assets/WIP2.png" />
+            </a>
+            <a href="ships.html">
+                <image class="nav-item" src="assets/WIP3.png" />
+            </a>
+            <a href="xelon.html">
+                <image class="nav-item" src="assets/WIP4.png" />
+            </a>
+        </nav>
+        <div class="article-container">
+            <article>
+                {{ content }}
+            </article>
+        </div>
+    </main>
+    <footer>
+        The Xivali project was started on 2021-12-14.
+        {% if page.last-update %}
+        Page last updated: {{ page.last-update }}
+        {% endif %}
+        <span>&copy; 2024 Jonathan (Eltala) Moore; Site redesign and edits: <a href="https://kazani.dev">
+                Ohin "Kazani" Taylor</a></span>
+    </footer>
+</body>
+
+</html>
