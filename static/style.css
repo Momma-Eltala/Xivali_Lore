@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    background-image: linear-gradient(#03957f, #007a9a, #03957f);
+    --radius: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: unset;
+}
+
+header {
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    padding: 0px 32px 0px 8px;
+    gap: 16px;
+    justify-content: space-between;
+    background-color: #1d363a;
+    height: 64px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.title, .headline {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: unset;
+    color: #39fab9;
+}
+
+.headline {
+    color: #28bd8b;
+}
+
+main {
+    color: #39fab9;
+
+    display: flex;
+    align-items: start;
+
+    gap: 48px;
+    margin: 8px;
+    margin-right: 48px;
+
+    min-height: calc(100vh - 64px - 16px);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.nav-item {
+    width: 100px;
+    height: 100px;
+}
+
+.article-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    padding: 16px;
+    margin-block: 40px;
+    border-radius: 24px;
+    backdrop-filter: grayscale(70%);
+    flex-grow: 1;
+
+    max-width: 80ch;
+}
+
+article :first-child {
+    margin-block-start: unset;
+}
+
+article :last-child {
+    margin-block-end: unset;
+}
+
+footer {
+    background-color: #131313;
+    color: #e0e0e0;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+        margin-right: 8px;
+        gap: 0px;
+    }
+
+    nav {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    article {
+        flex-grow: unset;
+    }
+}
